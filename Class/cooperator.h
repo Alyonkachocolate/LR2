@@ -20,7 +20,7 @@ public:
 cooperator::cooperator(std::string fio, size_t money, size_t days,
                        std::string name, double c)
     : eployeer(std::move(fio), money, days), company(std::move(name), c) {}
-size_t cooperator::salary() { return eployeer::salary()*GetCoef(); }
+size_t cooperator::salary() { return (eployeer::salary())*GetCoef(); }
 void cooperator::print() {
   std::cout << name << " еployeer" << std::endl;
   eployeer::print();

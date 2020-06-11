@@ -35,6 +35,5 @@ int main() {
 
   cooperator cool(fio, money, days, name, c);
   cool.print();
-  std::cout << "Salary: " << cool.salary() << std::endl;
   return 0;
 }

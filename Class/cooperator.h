@@ -22,7 +22,7 @@ cooperator::cooperator(std::string fio, size_t money, size_t days,
     : eployeer(std::move(fio), money, days), company(std::move(name), c) {}
 size_t cooperator::salary() { return (eployeer::salary())*GetCoef(); }
 void cooperator::print() {
-  std::cout << name << " еployeer" << std::endl;
+  std::cout << company::GetName() << " еployeer" << std::endl;
   eployeer::print();
   company::print();
   std::cout << "The salary = " << salary() << "$" << std::endl;
